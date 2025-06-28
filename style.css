@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    height: 40px;
+    color: white;
+    padding: 20px;
+}
+.logo{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.container{
+    height: 450px;
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(182, 214, 221);
+    gap: 30px;
+    border: 1px solid darkslategray;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.srch{
+    width: 300px;
+    height: 25px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#btn {
+    height: 30px;
+    width: 70px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#btn:hover {
+    background-color: rgb(61, 114, 114);
+}
+
+.strength-space{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
+}
+.strength-meter {
+  height: 8px;
+  background: rgb(61, 114, 114);
+  border-radius: 5px;
+  width: 100%;
+  max-width: 310px;
+}
+
+#meter-fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  background: red;
+  transition: width 0.3s;
+}
+
+#feedback {
+  font-weight: bold;
+  color: #222;
+  font-size: 16px;
+}
+
+#suggestions ul {
+  padding-left: 20px;
+  text-align: left;
+}
+#suggestions li {
+  margin: 3px 0;
+}
+
+
+@media (max-width:420px) {
+    .container{
+        width: 300px;
+    }
+}
